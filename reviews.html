@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>꿈의 제인</title>
+  <style>
+    figure.dream {
+      font-family: 'Raleway', Arial, sans-serif;
+      position: relative;
+      float: left;
+      overflow: hidden;
+      margin: 50px;
+      min-width: 220px;
+      max-width: 300px;
+      max-height: 300px;
+      width: 100%;
+      background: #000000;
+      color: #ffffff;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      font-size: 16px;
+    }
+
+    figure.dream * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    figure.dream img {
+      max-width: 100%;
+      position: relative;
+      opacity: 0.8;
+    }
+
+    figure.dream figcaption {
+      position: absolute;
+      top: 45%;
+      left: 7%;
+      right: 7%;
+      bottom: 45%;
+      border: 1px solid white;
+      border-width: 1px 1px 0;
+    }
+
+    figure.dream .hide {
+      overflow: hidden;
+      transform: translateY(50%);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    figure.dream p {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      width: 100%;
+      padding: 0 20px;
+      opacity: 0;
+      line-height: 1.6em;
+      font-size: 0.9em;
+    }
+
+    figure.dream:hover img,
+    figure.dream.hover img {
+      opacity: 0.25;
+    }
+
+    figure.dream:hover figcaption,
+    figure.dream.hover figcaption {
+      top: 7%;
+      bottom: 7%;
+    }
+
+    figure.dream:hover p,
+    figure.dream.hover p {
+      opacity: 1;
+    }
+
+    body {
+      background-image: url("index.png");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #header {
+      width: 100%;
+      height: 130px;
+      background-color: rgb(71, 2, 83);
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index:1;
+    }
+
+    #main-content {
+      width: 100%;
+      margin-top: 150px;
+      margin-bottom: 150px;
+    }
+
+    #footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      background-color: rgb(71, 2, 83);
+      left: 0px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .menubar {
+      border: 0px;
+      margin-top: 45px;
+      margin-left: 35%;
+      padding: 0px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .menubar ul {
+      background: rgb(71, 2, 83);
+      height: 50px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menubar li {
+      float: left;
+      padding: 0px;
+    }
+
+    .menubar li a {
+      background: rgb(71, 2, 83);
+      color: white;
+      display: block;
+      font-weight: normal;
+      line-height: 50px;
+      margin: 0px;
+      padding: 0px 30px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .menubar li a:hover,
+    .menubar ul li:hover a {
+      background: #D499B9;
+    }
+
+    .menubar li ul a {
+      display: block;
+      height: 50px;
+      font-size: 12px;
+      font-style: normal;
+      margin: 0px;
+      padding: 0px 10px 0px 15px;
+      text-align: left;
+    }
+
+    #box img {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body style="overflow-x:hidden">
+  <center>
+    <header>
+      <div id="header">
+        <div class="menubar">
+          <ul>
+            <li>
+              <a href="index.html">Main</a>
+            </li>
+            <li>
+              <a href="synopsis.html">Synopsis</a>
+            </li>
+            <li>
+              <a href="introduction.html">Introduction</a>
+            </li>
+            <li>
+              <a href="reviews.html">Reviews</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </center>
+  <article>
+    <div id="main-content">
+      <img src="reviews.png" width="450" style="margin-left: auto; margin-right: auto; display: block;" />
+      <figure class="dream">
+        <img src="img/review1.jpg" />
+        <figcaption>
+          <p>한없이 우울했지만 위로받았고<br> 
+              마냥 어둡지만은 않았지만 어두운<br>
+              우리 모두의 제인 
+              </p>
+          <div class="hide">
+            <h2>@Jisu</h2>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="dream">
+        <img src="img/review2.png" />
+        <figcaption>
+          <p>도대체 어떤 영화길래 그렇게들 추천하는가 했더니 이런 영화라서 그렇게들 칭찬했나보다. 
+            내 부족한 글솜씨로 말을 덧붙이는게 사족이될까 싶은 생각도 든다.
+          </p>
+          <div class="hide">
+            <h2>@Suyeon</h2>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="dream">
+        <img src="img/review3.jpg" />
+        <figcaption>
+          <p>우리 인생은 불행하다.<br>
+             행복하려고 노력하니깐.</p>
+          <div class="hide">
+            <h2>@Saehwa</h2>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="dream">
+        <img src="img/review4.jpg" />
+        <figcaption>
+          <p>어느 한곳에도 머물지 못하는 이방인의 무기력함, 그 ‘꿈’ 조차도 한없이 작은것이라는 아련함</p>
+          <div class="hide">
+            <h2>@Yookyung</h2>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="dream">
+        <img src="img/review5.jpg" />
+        <figcaption>
+          <p>꿈 속의 제인,<br>
+              꿈 같은 제인,<br>
+              소현의 꿈 제인.<br></p>
+          <div class="hide">
+            <h2>@YKJaehyunSH</h2>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="dream">
+        <img src="img/review6.jpeg" />
+        <figcaption>
+          <p>인생을 살면서 막다른골목에 다다랐을때
+              말소리에 뒤를 돌아보면 제인이 있을 것 같다.<br>
+              "안녕 돌아왔구나"</p>
+          <div class="hide">
+            <h2>@Sodam</h2>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="dream">
+        <img src="img/review7.png" />
+        <figcaption>
+          <p>내가 걸어가는 자리마다 <br>꿈을 놓아주세요.<br>
+             잠시나마 거닐면서<br> 행복할 수 있게.</p>
+          <div class="hide">
+            <h2>@Shinwon</h2>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="dream">
+        <img src="img/review9.jpg" />
+        <figcaption>
+          <p>제인, 하고 부르면 꿈에 취할 거 같았다</p>
+          <div class="hide">
+            <h2>@Okay1103</h2>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="dream">
+        <img src="img/review10.jpg" />
+        <figcaption>
+         <p>사는 것이 'unhappy'라면 차라리 행복한 꿈을 꾸겠어요.</p>
+          <div class="hide">
+            <h2>@Gayeon</h2>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </article>
+  <img src="img/footer.png">
+  <footer>
+    <div id="footer">
+      <script>
+        var Dialogue = new Array();
+        var a;
+        function random_image() {
+          Dialogue[0] = "명대사1";
+          Dialogue[1] = "명대사2";
+          Dialogue[2] = "명대사3";
+          Dialogue[3] = "명대사4";
+          Dialogue[4] = "명대사5";
+          Dialogue[5] = "명대사6";
+          Dialogue[6] = "명대사7";
+          Dialogue[7] = "명대사8";
+          Dialogue[8] = "명대사9";
+          Dialogue[9] = "명대사10";
+          a = Math.floor(Math.random() * (Dialogue.length - 1));
+          document.write('<div id="box" align="center"><img src="dialogue/' + Dialogue[a] + '.png" border=0 width="50%"></div>');
+        }
+        var temp;
+        random_image();
+      </script>
+    </div>
+  </footer>
+</body>
+
+</html>
